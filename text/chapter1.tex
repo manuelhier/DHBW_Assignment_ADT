@@ -1,29 +1,18 @@
 \section{Einleitung}
 
+Die über 50 Jahre alte Technologie durchlief im Laufe der Jahrzehnte mehrere Evolutionszyklen, um mit den Wandelnden Anforderungen mitzuhalten. Zusammen mit mit der Structured Query Language (kurz: \textbf{SQL}) bilden relationale Datenbanken bis heute den de facto  Standard für das Speichern und Verwalten digitaler Daten und Informationen aller Art und Güte. In der montalich aktualisierten Rangliste der Popularität verschiedener DBMS der Webseite \textit{db-engines.com} sind im März 2025 sieben der 10 meistgenutzten Datenbanken von primär relationaler Natur. \footcite{redgatesoftwareltd.DBEnginesRanking2025}
+
+% ChatGPT
+Trotz kontinuierlicher Weiterentwicklungen und Optimierungen hinsichtlich Skalierbarkeit, Performance und Flexibilität stoßen relationale Datenbanken bei bestimmten modernen Anwendungsfällen an ihre Grenzen. In diesem Kontext haben sich alternative Datenbanktechnologien wie NoSQL- und NewSQL-Systeme entwickelt, die speziell für verteilte, flexible oder hochgradig skalierbare Datenverarbeitung konzipiert wurden.
+
 % \subsection{Motivation \& Aufbau der Arbeit}
 
-\subsection{Relationale Datenbanken}
+\subsection{Relationale Datenbanken und SQL}
 
-% Relationale Datenbanken in Verbindung der Structured Query Language (SQL) waren in letzen Jahrzehnten der de facto Standard für das Speichern digitaler Daten und Informationen aller Art und Güte.
+Das relationale Modell in Verbindung mit der Structured Query Language (SQL)  bildet die Grundlage relationaler Datenbankmanagementsysteme (RDBMS) und wurde im Jahr 1970 erstmals durch den Mathematiker Edgar F. Codd konzeptioniert und vorgeschlagen. \footcite{coddRelationalModelData1970} Seine Forschungsarbeit basiert auf der Mengenlehre, einem Teilgebiet der Mathematik. Eine relationale Datenbank ist demnach eine Menge von Tabellen, den sogenannten Relationen. Das Relationenschema definiert die Anzahl und Art der möglichen Spalten bzw. Attribute einer Tabelle und wird bei Erzeugung der Tabelle festgelegt. Eine Zeile der Tabelle, bildet einen Datensatz. Diese werden zeilenweise in Form von Tupeln in die Tabellen eingefügt und müssen dabei den Regeln des Relationenschemas folgen. Ein weiterer Teil Codd's Forschung war die Entwicklung der relationalen Algebra, deren Operationen die Grundlage der universellen Abfragesprache SQL bilden. Diese kombiniert mengenorientierte Operatoren wie die Vereinigungsmenge oder das Kartesische-Produkt mit den relationenorientierten Operatoren Selektion und Projektion. Die Datenabfrage mit SQL folgt dem SELECT-FROM-WHERE Ausdruck, mit welchem Daten von einer oder mehreren Tabellen unter Selektions- und Filterbedingungen abgefragt und tabellarisch angezeigt werden. Auf Basis dieser Forschungsarbeit entstanden in den folgenden Dekaden zahllose Datenbanksysteme wie beispielsweise IBM's Db2, die Oracle Database und der Microsoft SQL Server. \footcite[S. 15-24]{meierWerkzeugeDigitalenWirtschaft2018}
 
-% Seit der Konzeptionierung und Prototypisierung des relationalen Modells durch den Mathematiker Edgar Frank Codd im Jahr 1970 wurden Relationale Datenbanken zum de facto Standard für das Speichern digitaler Daten und Informationen. Auf Basis dieser Forschungsarbeiten entstanden zahllose  Datenbanksysteme DB2 (IBM), Oracle Database (Oracle) und SQL Server (Microsoft).
+%Des Weiteren bietet die große Auswahl an Implementierungen verschiedener Hersteller ein breites Spektrum an Auswahl und Expertenwissen. Für die Mehrheit der 
 
-Das relationale Modell bildet die Grundlage heutiger relationaler Datenbankmanagementsysteme (RDBMS) und wurde im Jahr 1970 erstmals durch den Mathematiker Edgar F. Codd konzeptioniert und vorgeschlagen. \cite{coddRelationalModelData1970} Auf Basis dieser Forschungsarbeite entstanden in den folgenden Dekaden zahllose Datenbanksysteme wie beispielsweise IBM's Db2, die Oracle Database und der Microsoft SQL Server. Die über 50 Jahre alte Technologie durchlief im Laufe der Jahrzehnte mehrere Evolutionszyklen, um mit den Wandelnden Anforderungen mitzuhalten. Zusammen mit mit der Structured Query Language (kurz: \textbf{SQL}) bilden relationale Datenbanken bis heute den de facto  Standard für das Speichern digitaler Daten und Informationen aller Art und Güte. In der montalich aktualisierten Rangliste der Popularität verschiedener DBMS der Webseite \textit{db-engines.com} sind im März 2025 sieben der 10 meistgenutzten Datenbanken von primär relationaler Natur. \cite{redgatesoftwareltd.DBEnginesRanking2025}
+\subsection{Big Data - Große Daten, große Probleme?}
 
-% Die über 50 Jahre alte Technologie durchlief im Laufe der Jahrzehnte mehrere Evolutionszyklen und kann sich durch die kontinuierliche Weiterentwicklung bis heute als Marktführer bezeichnen. 
-
-
-% In den folgenden Jahren entwickelten die zu dieser Zeit führenden IT-Unternehmen IBM, Oracle und Microsoft auf Basis dieser Forschung die ersten kommerziellen relationalen Datenbanken  
-
-% Die Konzeptionierung und Prototypisierung des relationalen Modells durch den Mathematiker Edgar Frank Codd im Jahr 1970 
-
-% Relationale Datenbanken -> Tabellarische Datensammlung
-
-Relationale Datenbanken basieren auf dem relationalen Modell welches aus dem mathematischen Fachgebiet der Mengenlehre abgeleitet wurde. Daten werden in Tabellen, den sogenannten Relationen gespeichert. Diese Tabelle sowie deren Spalten und unterstützten Datenformate folgen einem fest definiertem Schema. Bevor Datenzeilen eingefügt und gespeichert werden können muss dieses Schema erstellt werden. Für die Absprache wird die universelle Sprache SQL verwendet, welche mengenorientierte Operatoren wie Vereinigung oder das Kartesische-Produkt mit relationenorientierten Operatoren wie Selektion und Projektion verbindet. Die Grundstruktur folgt dabei dem SELECT-FROM-WHERE Ausdruck, mit welchem Daten von einer oder mehreren Tabellen unter Selektions- und Filterbedingungen (WHERE) abgefragt und tabellarisch angezeigt werden. 
-
-
-Des Weiteren bietet die große Auswahl an Implementierungen verschiedener Hersteller ein breites Spektrum an Auswahl und Expertenwissen. Für die Mehrheit der 
-
-\subsection{Big Data - Große Daten?}
-
-Der Begriff Big Data (dt. Große Daten) beschreibt den allgegenwärtigen Trend wachsender Datenmengen. Hierbei liegt der Fokus nicht lediglich auf der Wachsenden Größe einzelner Datensätze wie eine einfache Übersetzung vermuten ließe, sondern vielmehr der horizontalen Skalierung und somit einer überwältigenden Anzahl von Datensätzen welche in Echtzeit verarbeitet und gespeichert werden müssen. Passende Beispiele hierfür sind beispielsweise der Datenfluss großer Online-Shops, Soziale-Netzwerke und digitale Streaming-Platformen. (Meier, 2018, p. 5)
+Der Begriff Big Data (dt. Große Daten) beschreibt den allgegenwärtigen Trend wachsender Datenmengen. Hierbei liegt der Fokus nicht lediglich auf der Wachsenden Größe einzelner Datensätze wie die Übersetzung vermuten ließe, sondern vielmehr der horizontalen Skalierung und somit einer überwältigenden Anzahl von Datensätzen welche in Echtzeit verarbeitet und gespeichert werden müssen. Passende Beispiele hierfür sind beispielsweise der Datenfluss großer Online-Shops, Soziale-Netzwerke und digitale Streaming-Platformen. \footcite[S. 5]{meierWerkzeugeDigitalenWirtschaft2018}
