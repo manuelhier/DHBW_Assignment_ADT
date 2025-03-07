@@ -13,7 +13,7 @@ Der Begriff NoSQL beschreibt eine Familie von Datenbanken welche sich von dem tr
     \item \textbf{Graphdatenbanken} speichern Daten als Knoten und deren Beziehungen als Kanten. Vernetzte Datenstrukturen, bei denen die Beziehungen zischen Datenelementen im Vordergrund stehen, können in Graphdatenbanken effizient abgebildet werden.
 \end{enumerate}
 
-Die ersten drei Datenbanktypen unterscheiden sich in ihrer Art, stark von den Graphdatenbanken. Fowler schlägt daher die Teilung der NoSQL-Familie  in zwei übergreifende Kategorien vor: Die Aggregat-orientierten Datenbanken, speichern zusammengehörige gemeinsam ab. Hier ist der Unterschied zu relationalen Datenbanken erkennbar, wo zusamenhängende Daten meist durch die Normalisierung auseinandergerissen werden. Graphdatenbanken hingegen, sind spezialisiert auf die noch stärkere Verteilung von Daten welche nicht im direkten Zusammenhang zueinander stehen, sondern lediglich in Bestimmten Situationen oder Anwendung in Verbindung oder Beziehung zueinander stehen.
+Die ersten drei Datenbanktypen unterscheiden sich in ihrer Art, stark von den Graphdatenbanken. Fowler schlägt daher die Teilung der NoSQL-Familie  in zwei übergreifende Kategorien vor: Die Aggregat-orientierten Datenbanken, speichern zusammengehörige gemeinsam ab. Hier ist der Unterschied zu relationalen Datenbanken erkennbar, wo zusamenhängende Daten meist durch die Normalisierung auseinandergerissen werden. Graphdatenbanken hingegen, sind spezialisiert auf die noch stärkere Verteilung von Daten welche nicht im direkten Zusammenhang zueinander stehen, sondern lediglich in Bestimmten Situationen oder Anwendung in Verbindung oder Beziehung zueinander stehen. \footcite{fowlerAggregateOrientedDatabase2012}
 
 \subsection{Zurück zu SQL - NewSQL}
 %\subsection{Zurück zu (New)SQL}
@@ -36,3 +36,5 @@ In der Vergangenheit war die Wahl der Datenbank unkompliziert - Es musste ledigl
 \end{figure}
 
 Erkennbar ist, das für alle Funktionen verschiedene Datenbankmodelle gewählt wurden. Für die Verwaltung der Nutzersessions und Warenkörbe könnte eine simple Schlüssel-Wert-Datenbank sinnvoll sein. Für das Bestellsystem, ist die Flexibilität und Skalierbarkeit von NoSQL ebenfalls wichtig, weshalb ein Dokumentspeicher in Betracht zu ziehen ist. Für die Verwaltung der Benutzeraccounts sind die ACID eigenschaften relationaler Datenbanken besonders wichtig. Bei den Produktrezensionen und Kommentaren liegen stark vernetzte Daten vor, weshalb eine Graphdatenbank sinnvoll erscheint. Auch für die Business Intelligence möchte man das passende System verwenden, hier kommt Beispielweise ein Data Warehouse basiernd auf einer Spaltenfamiliendatenbank in Frage.
+
+Polyglot Persitstance !!! 
