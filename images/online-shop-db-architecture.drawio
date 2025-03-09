@@ -1,13 +1,13 @@
 <mxfile host="65bd71144e">
     <diagram name="Seite-1" id="Jeph6b-E0EifouU-hCsT">
-        <mxGraphModel dx="975" dy="1455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="629" dy="941" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="groQljXZl6Qwginvz4y7-140" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="groQljXZl6Qwginvz4y7-2" target="groQljXZl6Qwginvz4y7-106" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="groQljXZl6Qwginvz4y7-2" value="Session &lt;br&gt;Management &amp;amp; Warenkorb" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;" parent="1" vertex="1">
+                <mxCell id="groQljXZl6Qwginvz4y7-2" value="Sitzungsverwaltung&lt;br&gt;&lt;div&gt;&amp;amp; Warenkorb&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;" parent="1" vertex="1">
                     <mxGeometry x="86" y="140" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="groQljXZl6Qwginvz4y7-142" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="groQljXZl6Qwginvz4y7-3" target="groQljXZl6Qwginvz4y7-14" edge="1">
@@ -19,7 +19,7 @@
                 <mxCell id="groQljXZl6Qwginvz4y7-143" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="groQljXZl6Qwginvz4y7-4" target="groQljXZl6Qwginvz4y7-113" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="groQljXZl6Qwginvz4y7-4" value="Account&lt;br&gt;&amp;nbsp;Management" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Helvetica;" parent="1" vertex="1">
+                <mxCell id="groQljXZl6Qwginvz4y7-4" value="Kunden- &amp;amp;&lt;br&gt;Finanzverwaltung" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Helvetica;" parent="1" vertex="1">
                     <mxGeometry x="366" y="140" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="groQljXZl6Qwginvz4y7-145" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="groQljXZl6Qwginvz4y7-5" target="groQljXZl6Qwginvz4y7-41" edge="1">
@@ -209,7 +209,7 @@
                         <mxPoint x="472" y="80" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="groQljXZl6Qwginvz4y7-147" value="Online-Shop Datenbankarchitektur" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+                <mxCell id="groQljXZl6Qwginvz4y7-147" value="E-Commerce Plattform" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
                     <mxGeometry x="206" y="40" width="440" height="60" as="geometry"/>
                 </mxCell>
             </root>
