@@ -13,7 +13,7 @@
 
 \begin{document}
 
-    \pagenumbering{Roman}
+    \pagenumbering{gobble}
 
     \pagestyle{fancy}
     \fancyhead{}
@@ -22,33 +22,33 @@
 
     % DECKBLATT
     \newgeometry{left=2.5cm, right=2.5cm, head=1.25cm, bottom=2cm, foot=1.25cm, includefoot}
-    \input{template/titlepage}
+    \include{template/titlepage}
     \restoregeometry
 
     % SELBSTSTÄNDIGKEITSERKLÄRUNG
-    \newpage
     \thispagestyle{empty}
-    \input{template/declaration}
+    \include{template/declaration}
 
     % SPERRVERMERK
     \ifblockingnotice
-        \newpage
         \thispagestyle{empty}
-        \input{template/blockingNotice}
+        \include{template/blockingNotice}
         \clearpage
     \fi
 
     % ABSTRACT
-    % \newpage
-    % \input{text/abstract}
+    % \include{text/abstract}
+
 
     % INHALTSVERZEICHNIS
     \newpage
     \tableofcontents
 
+    \pagenumbering{Roman}
+
+
     % ABKÜRZUNGSVERZEICHNIS
-    % \newpage
-    % \input{text/acronym}
+    \include{text/acronym}
 
     % ABBILDUNGSVERZEICHNIS
     % \newpage
@@ -58,7 +58,7 @@
     % \newpage
     % \listoftables
 
-    \clearpage \newpage
+    \newpage
     \setcounter{pageNumber}{\value{page}}
     \pagenumbering{arabic}
 
@@ -69,19 +69,19 @@
     \input{text/chapter3}
     \newpage
     \input{text/chapter4}
-    \newpage
 
     \label{pagesForDeclaration}
     \clearpage
+
     \pagenumbering{Roman}
     \setcounter{page}{\value{pageNumber}}
 
     % LITERATURVERZEICHNIS
+    \newpage
     \addcontentsline{toc}{section}{\referenceHeading}
     \printbibliography[title={\referenceHeading}]
 
     % ANHANG          
-    % \newpage
-    % \input{text/appendix}
+    % \include{text/appendix}
 
 \end{document}
